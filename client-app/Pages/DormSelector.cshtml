@@ -1,0 +1,46 @@
+﻿@page
+@model client_app.Pages.DormSelectorModel
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Dorm Selector</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Dorm Selector</li>
+    </ol>
+    <div class="row">
+        @foreach (var dorm in Model.Dorms)
+        {
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-primary text-white mb-4">
+                    <div class="card-body">
+                        <form method="post" asp-page-handler="SelectDorm">
+                            <input type="hidden" name="dormId" value="@dorm.Id" />
+                            <button type="submit" class="btn btn-link text-white">@dorm.Name</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    @if (Model.SelectedDormFloors.Any())
+    {
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Floors in Selected Dorm</h2>
+                <select class="form-control">
+                    @foreach (var floor in Model.SelectedDormFloors)
+                    {
+                        <option value="@floor.Id">@floor.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#datatablesSimple').DataTable();
+        });
+    </script>
+}

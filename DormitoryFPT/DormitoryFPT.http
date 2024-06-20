@@ -1,0 +1,6 @@
+@DormitoryFPT_HostAddress = http://localhost:5185
+
+GET {{DormitoryFPT_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

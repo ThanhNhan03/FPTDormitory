@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DormitoryFPT", "DormitoryFPT\DormitoryFPT.csproj", "{33EEC696-EEBF-48C2-A7C6-8296EE2EA7A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "client-app", "client-app\client-app.csproj", "{56B3C1D4-A257-4E65-8CE9-FD572D56DA9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33EEC696-EEBF-48C2-A7C6-8296EE2EA7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33EEC696-EEBF-48C2-A7C6-8296EE2EA7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33EEC696-EEBF-48C2-A7C6-8296EE2EA7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33EEC696-EEBF-48C2-A7C6-8296EE2EA7A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B3C1D4-A257-4E65-8CE9-FD572D56DA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B3C1D4-A257-4E65-8CE9-FD572D56DA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B3C1D4-A257-4E65-8CE9-FD572D56DA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B3C1D4-A257-4E65-8CE9-FD572D56DA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C40E6ED-3E63-4121-9EA4-78AC7EB58FAF}
+	EndGlobalSection
+EndGlobal
